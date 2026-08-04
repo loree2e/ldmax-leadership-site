@@ -14,9 +14,12 @@ The website for LD Max Leadership (ldmaxleadership.com), built as a single self-
 
 Open the project in Claude Code and describe the change, or edit `index.html` directly. To preview locally, ask Claude Code to "run the ldmax site" (a dev server config named `ldmax-site` is set up).
 
-## To deploy
+## Deployment (live setup)
 
-See Step 2 of `MIGRATION-GUIDE.md`. Short version: push this folder to a GitHub repo, connect it to Cloudflare Pages, add the custom domain.
+- Repo: https://github.com/loree2e/ldmax-leadership-site
+- Hosting: GitHub Pages (main branch, root), custom domain ldmaxleadership.com
+- Domain: registered at Hover; DNS points apex A records to GitHub Pages IPs, www CNAME to loree2e.github.io
+- To publish changes: commit and push to main; live in about a minute
 
 ## Before launch checklist
 
