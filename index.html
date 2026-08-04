@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LD Max Leadership | Leadership Team Development with Loree Draude</title>
+<meta name="description" content="LD Max Leadership partners with organizations to develop leadership teams that perform under pressure. A team of veteran executive coaches, founded by Navy combat aviator and 20-year Silicon Valley leader Loree Draude.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0c1f38;
+    --navy-deep: #081527;
+    --cream: #faf7f1;
+    --ink: #1d2a3a;
+    --muted: #5b6b7d;
+    --gold: #c9a227;
+    --gold-soft: #e8d9a8;
+    --line: #e4ddd0;
+    --pink: #e0356f;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.65;
+    font-size: 17px;
+  }
+  h1, h2, h3 { font-family: 'Fraunces', Georgia, serif; font-weight: 500; line-height: 1.15; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+  .eyebrow {
+    font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase;
+    font-weight: 600; color: var(--gold);
+  }
+
+  /* Nav */
+  header {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(12, 31, 56, 0.92); backdrop-filter: blur(8px);
+    color: #fff;
+  }
+  .nav { display: flex; align-items: center; justify-content: space-between; padding: 18px 24px; max-width: 1080px; margin: 0 auto; }
+  .wordmark { font-family: 'Fraunces', serif; font-size: 20px; letter-spacing: 0.02em; text-decoration: none; }
+  .wordmark strong { font-weight: 600; }
+  .wordmark span { color: var(--gold-soft); }
+  .nav-links { display: flex; gap: 28px; align-items: center; }
+  .nav-links a { text-decoration: none; font-size: 14.5px; font-weight: 500; opacity: 0.85; }
+  .nav-links a:hover { opacity: 1; }
+  .nav-cta {
+    background: var(--gold); color: var(--navy-deep) !important; padding: 9px 18px;
+    border-radius: 4px; opacity: 1 !important; font-weight: 600 !important;
+  }
+  @media (max-width: 760px) { .nav-links a:not(.nav-cta) { display: none; } }
+
+  /* Hero */
+  .hero {
+    background: linear-gradient(175deg, var(--navy) 0%, var(--navy-deep) 100%);
+    color: #fff; position: relative; overflow: hidden;
+  }
+  .hero-inner { padding: 110px 24px 120px; max-width: 1080px; margin: 0 auto; position: relative; z-index: 2; }
+  .hero h1 { font-size: clamp(44px, 7vw, 76px); margin: 20px 0 26px; }
+  .hero h1 em { font-style: italic; color: var(--gold-soft); }
+  .hero p.lede { font-size: clamp(18px, 2.2vw, 21px); max-width: 640px; color: #cdd6e2; }
+  .hero-ctas { margin-top: 40px; display: flex; gap: 16px; flex-wrap: wrap; }
+  .btn {
+    display: inline-block; text-decoration: none; font-weight: 600; font-size: 16px;
+    padding: 14px 28px; border-radius: 4px; transition: transform 0.15s ease;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-gold { background: var(--gold); color: var(--navy-deep); }
+  .btn-ghost { border: 1px solid rgba(255,255,255,0.4); color: #fff; }
+  .contours {
+    position: absolute; inset: 0; z-index: 1; opacity: 0.13; pointer-events: none;
+  }
+
+  /* Sections */
+  section { padding: 88px 0; }
+  .section-head { max-width: 640px; margin-bottom: 48px; }
+  .section-head h2 { font-size: clamp(30px, 4vw, 42px); margin-top: 14px; }
+  .section-head p { margin-top: 16px; color: var(--muted); }
+
+  /* Name story */
+  .name-story { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .name-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 64px; align-items: center; }
+  @media (max-width: 820px) { .name-grid { grid-template-columns: 1fr; } }
+  .name-grid h2 { font-size: clamp(30px, 4vw, 40px); margin: 14px 0 20px; }
+  .name-grid p { margin-bottom: 16px; }
+  .curve-card { background: var(--cream); border: 1px solid var(--line); border-radius: 8px; padding: 32px; }
+  .curve-card figcaption { font-size: 14px; color: var(--muted); margin-top: 14px; text-align: center; }
+
+  /* Programs */
+  .programs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  @media (max-width: 900px) { .programs-grid { grid-template-columns: 1fr; } }
+  .program {
+    background: #fff; border: 1px solid var(--line); border-radius: 8px;
+    padding: 36px 30px; display: flex; flex-direction: column;
+  }
+  .program .num { font-family: 'Fraunces', serif; font-size: 15px; color: var(--gold); font-weight: 600; letter-spacing: 0.08em; }
+  .program h3 { font-size: 24px; margin: 12px 0 14px; }
+  .program p { font-size: 15.5px; color: var(--muted); }
+  .program ul { margin: 16px 0 0 18px; font-size: 15px; color: var(--ink); }
+  .program li { margin-bottom: 8px; }
+  .program .flagship-tag {
+    align-self: flex-start; font-size: 12px; font-weight: 600; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--pink); margin-bottom: 10px;
+  }
+
+  /* SOAR */
+  .soar { background: var(--navy); color: #fff; }
+  .soar .section-head p { color: #b9c5d4; }
+  .soar-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  @media (max-width: 900px) { .soar-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 540px) { .soar-grid { grid-template-columns: 1fr; } }
+  .soar-card { border: 1px solid rgba(255,255,255,0.16); border-radius: 8px; padding: 28px 24px; }
+  .soar-card .letter { font-family: 'Fraunces', serif; font-size: 40px; color: var(--gold-soft); }
+  .soar-card h3 { font-size: 19px; margin: 8px 0 10px; }
+  .soar-card p { font-size: 14.5px; color: #b9c5d4; }
+
+  /* Proof */
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-bottom: 56px; }
+  @media (max-width: 820px) { .stats { grid-template-columns: repeat(2, 1fr); } }
+  .stat .n { font-family: 'Fraunces', serif; font-size: clamp(30px, 4vw, 44px); color: var(--navy); }
+  .stat .l { font-size: 14px; color: var(--muted); margin-top: 4px; }
+  .logos { border-top: 1px solid var(--line); padding-top: 40px; }
+  .logos p.label { font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); font-weight: 600; margin-bottom: 20px; }
+  .logo-row { display: flex; flex-wrap: wrap; gap: 14px 36px; font-family: 'Fraunces', serif; font-size: 20px; color: #8a94a3; }
+
+  /* Keynotes */
+  .keynotes { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .talk-list { display: grid; gap: 20px; }
+  .talk {
+    display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: baseline;
+    background: var(--cream); border: 1px solid var(--line); border-radius: 8px; padding: 28px 32px;
+  }
+  @media (max-width: 640px) { .talk { grid-template-columns: 1fr; gap: 8px; } }
+  .talk h3 { font-size: 22px; }
+  .talk .tag { font-size: 13px; font-weight: 600; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; }
+  .talk p { color: var(--muted); font-size: 15.5px; margin-top: 6px; }
+
+  /* Team */
+  .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  @media (max-width: 900px) { .team-grid { grid-template-columns: 1fr; } }
+  .team-card {
+    background: #fff; border: 1px solid var(--line); border-radius: 8px;
+    padding: 36px 30px;
+  }
+  .team-card img {
+    width: 96px; height: 96px; object-fit: cover; object-position: top;
+    border-radius: 50%; margin-bottom: 18px;
+  }
+  .team-card .role { font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); }
+  @media (min-width: 901px) { .team-card .role.offset { margin-top: 114px; } }
+  .team-card h3 { font-size: 22px; margin: 6px 0 12px; }
+  .team-card p { font-size: 15.5px; color: var(--muted); margin-bottom: 12px; }
+  .team-card p:last-child { margin-bottom: 0; }
+
+  /* About */
+  .about-grid { display: grid; grid-template-columns: 380px 1fr; gap: 64px; align-items: start; }
+  @media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; } }
+  .about-grid img { border-radius: 8px; }
+  .about-grid h2 { font-size: clamp(30px, 4vw, 40px); margin: 14px 0 20px; }
+  .about-grid p { margin-bottom: 16px; }
+  .about-grid .human { color: var(--muted); font-size: 15.5px; border-left: 3px solid var(--gold); padding-left: 18px; }
+
+  /* Engagement steps */
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  @media (max-width: 820px) { .steps { grid-template-columns: 1fr; } }
+  .step { padding: 8px 0; }
+  .step .n { font-family: 'Fraunces', serif; font-size: 18px; color: var(--gold); font-weight: 600; }
+  .step h3 { font-size: 21px; margin: 8px 0 10px; }
+  .step p { font-size: 15.5px; color: var(--muted); }
+
+  /* Contact */
+  .contact { background: linear-gradient(175deg, var(--navy) 0%, var(--navy-deep) 100%); color: #fff; text-align: center; }
+  .contact h2 { font-size: clamp(32px, 5vw, 48px); margin-top: 14px; }
+  .contact p { max-width: 560px; margin: 20px auto 0; color: #cdd6e2; }
+  .contact .hero-ctas { justify-content: center; }
+
+  footer { background: var(--navy-deep); color: #7f8ca0; padding: 36px 0; font-size: 14px; }
+  .foot { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+  footer a { color: #aab6c8; text-decoration: none; }
+  footer a:hover { color: #fff; }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a class="wordmark" href="#top"><strong>LD&nbsp;Max</strong> <span>Leadership</span></a>
+    <div class="nav-links">
+      <a href="#why">Why LD Max</a>
+      <a href="#programs">Programs</a>
+      <a href="#keynotes">Keynotes</a>
+      <a href="#team">Team</a>
+      <a class="nav-cta" href="#contact">Start a Conversation</a>
+    </div>
+  </nav>
+</header>
+
+<div class="hero" id="top">
+  <svg class="contours" viewBox="0 0 1440 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g fill="none" stroke="#c9a227" stroke-width="1.2">
+      <path d="M-50 480 C 250 380, 500 560, 780 440 S 1250 340, 1500 430"/>
+      <path d="M-50 420 C 260 320, 520 500, 800 380 S 1260 280, 1500 370"/>
+      <path d="M-50 360 C 270 260, 540 440, 820 320 S 1270 220, 1500 310"/>
+      <path d="M-50 300 C 280 200, 560 380, 840 260 S 1280 160, 1500 250"/>
+      <path d="M-50 240 C 290 140, 580 320, 860 200 S 1290 100, 1500 190"/>
+    </g>
+  </svg>
+  <div class="hero-inner">
+    <p class="eyebrow">Leadership Team Development &middot; Executive Coaching &middot; Keynotes</p>
+    <h1>Less drag.<br><em>More lift.</em></h1>
+    <p class="lede">In aviation, L/D max is the speed where a wing produces the most lift for the least drag. Your leadership team has one too. LD Max Leadership partners with organizations to find it: a bench of veteran executive coaches and facilitators, founded and led by Loree Draude, one of the U.S. Navy's first women to fly in a combat squadron and a 20-year veteran of leading teams at Google and Meta.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-gold" href="#contact">Start a Conversation</a>
+      <a class="btn btn-ghost" href="#keynotes">Book a Keynote</a>
+    </div>
+  </div>
+</div>
+
+<section class="name-story" id="why">
+  <div class="wrap name-grid">
+    <div>
+      <p class="eyebrow">Why "LD Max"</p>
+      <h2>Every team has a point of maximum performance.</h2>
+      <p>Pilots learn it early: at one precise speed, the aircraft gets its best glide, its longest range, its most performance for the least effort. Fly slower and you're plowing. Fly faster and you're burning energy fighting the air. That point is called L/D max.</p>
+      <p>Leadership teams work the same way. Most are carrying drag they've stopped noticing: unclear priorities, unspoken conflict, meetings that produce heat instead of lift. The work of LD Max Leadership is to find that drag, name it, and trim it, so the energy your team already has starts converting into altitude.</p>
+      <p>LD Max Leadership was built at that intersection. Our founder flew jets off carriers and led teams through hypergrowth in Silicon Valley, and our coaches have guided executives through the moments when the stakes are highest.</p>
+    </div>
+    <figure class="curve-card">
+      <svg viewBox="0 0 400 300" aria-label="Drag curve showing the L/D max point">
+        <g stroke="#e4ddd0" stroke-width="1">
+          <line x1="50" y1="250" x2="380" y2="250"/>
+          <line x1="50" y1="250" x2="50" y2="20"/>
+        </g>
+        <text x="215" y="282" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#5b6b7d">Effort</text>
+        <text x="26" y="140" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#5b6b7d" transform="rotate(-90 26 140)">Drag</text>
+        <path d="M 70 60 C 130 200, 180 215, 215 215 C 260 215, 320 130, 370 50" fill="none" stroke="#0c1f38" stroke-width="2.5"/>
+        <circle cx="215" cy="215" r="7" fill="#c9a227"/>
+        <text x="215" y="196" text-anchor="middle" font-family="Fraunces, serif" font-size="16" fill="#0c1f38">L/D max</text>
+      </svg>
+      <figcaption>The point where everything is working in your favor.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="programs">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">How We Work Together</p>
+      <h2>Built for organizations that are serious about their leaders.</h2>
+      <p>Every engagement is designed around your business, your culture, and the outcomes you need, and staffed to fit its scope, from a single facilitator to a full coaching bench. Here are the three ways in.</p>
+    </div>
+    <div class="programs-grid">
+      <div class="program">
+        <span class="flagship-tag">Flagship</span>
+        <span class="num">01</span>
+        <h3>Leadership Team Partnerships</h3>
+        <p>A multi-month partnership to develop your senior team as a unit. We start with where the drag is, then build the practices that create lift.</p>
+        <ul>
+          <li>Discovery interviews across the leadership team</li>
+          <li>Facilitated working sessions built on the SOAR framework</li>
+          <li>1:1 coaching for key executives, matched from our coaching bench</li>
+          <li>Regular debriefs with measurable outcomes</li>
+        </ul>
+      </div>
+      <div class="program">
+        <span class="num" style="margin-top:26px">02</span>
+        <h3>Executive Coaching</h3>
+        <p>ICF-certified coaching for executives and founders, as part of a team partnership or sponsored by your organization for individual leaders.</p>
+        <ul>
+          <li>Confidential 1:1 engagements, typically 6 to 12 months</li>
+          <li>Each leader matched with the right coach from our bench</li>
+          <li>Hundreds of Silicon Valley executives coached</li>
+        </ul>
+      </div>
+      <div class="program">
+        <span class="num" style="margin-top:26px">03</span>
+        <h3>Keynotes &amp; Workshops</h3>
+        <p>Interactive talks that drop your audience into the cockpit and hand them frameworks they'll actually use. Customized deeply for every audience.</p>
+        <ul>
+          <li>Conference keynotes and leadership offsites</li>
+          <li>Half-day and full-day team workshops</li>
+          <li>Every talk tailored to your industry and moment</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="soar">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">The Framework</p>
+      <h2>SOAR: how good leaders become great ones.</h2>
+      <p>From founder Loree Draude's book <em>SOAR into Joy</em>, tested with leadership teams from the flight deck to Fortune 500 boardrooms. It's one thing to fly, to just drone along at one altitude. We want to SOAR.</p>
+    </div>
+    <div class="soar-grid">
+      <div class="soar-card">
+        <div class="letter">S</div>
+        <h3>Self-Awareness</h3>
+        <p>Know your values and your strengths. A strength is something you do well and love doing. Most leaders are guessing at both.</p>
+      </div>
+      <div class="soar-card">
+        <div class="letter">O</div>
+        <h3>Openness</h3>
+        <p>Be open to feedback and to being wrong. Pilots who rejected their landing grades got sent home. The ones who listened made the top of the board.</p>
+      </div>
+      <div class="soar-card">
+        <div class="letter">A</div>
+        <h3>Appreciation</h3>
+        <p>The number one reason people leave jobs is not feeling appreciated. Appreciation is a leadership practice, and it's trainable.</p>
+      </div>
+      <div class="soar-card">
+        <div class="letter">R</div>
+        <h3>Responsibility</h3>
+        <p>Aviate, navigate, communicate. Taking 100 percent responsibility is where a leader's freedom actually comes from.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><div class="n">300+</div><div class="l">carrier landings, 99 of them at night</div></div>
+      <div class="stat"><div class="n">20 yrs</div><div class="l">leading teams at Google, Meta, and startups</div></div>
+      <div class="stat"><div class="n">+16%</div><div class="l">team recognition scores at Meta under her leadership practices</div></div>
+      <div class="stat"><div class="n">#1</div><div class="l">Amazon bestselling author, <em>SOAR into Joy</em></div></div>
+    </div>
+    <div class="logos">
+      <p class="label">Organizations we have worked with</p>
+      <div class="logo-row">
+        <span>Google</span><span>Meta</span><span>Marriott</span><span>Palo Alto Networks</span><span>Cummins</span><span>BetMGM</span><span>GDT</span><span>NPower</span><span>U.S. Navy</span><span>Aspire Institute</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="keynotes" id="keynotes">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Keynotes</p>
+      <h2>Talks that start on a flight deck at midnight.</h2>
+      <p>No moon. No stars. No horizon. Loree's keynotes open in the cockpit and land on frameworks your people will use Monday morning. She's a trained performer with an off-Broadway solo show, so your audience gets a storyteller, and your leaders get the takeaways.</p>
+    </div>
+    <div class="talk-list">
+      <div class="talk">
+        <span class="tag">Signature</span>
+        <div>
+          <h3>SOAR as a Leader</h3>
+          <p>A total electrical failure on a night catapult launch, three failed landings with 5,000 people watching, and the four practices that turn pressure into performance.</p>
+        </div>
+      </div>
+      <div class="talk">
+        <span class="tag">Crisis</span>
+        <div>
+          <h3>Aviate, Navigate, Communicate</h3>
+          <p>The crisis framework Loree learned in the cockpit and used the night Stephen Colbert skewered her startup in front of 1.2 million people. How leaders keep flying the plane.</p>
+        </div>
+      </div>
+      <div class="talk">
+        <span class="tag">Influence</span>
+        <div>
+          <h3>Storytelling for Leaders</h3>
+          <p>The stories we tell our teams to inspire them, and the stories we tell ourselves about what we're capable of. Taught to audiences of 2,000+.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="team">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">The Team</p>
+      <h2>No bird (or person) soars on its own.</h2>
+      <p>That line is from our founder's book, and it's how we build every engagement. You get a team scaled to your organization, with one person accountable to you for all of it.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="assets/loree-headshot-alt.jpg" alt="Loree Draude">
+        <p class="role">Founder &amp; Principal</p>
+        <h3>Loree Draude</h3>
+        <p>Navy combat aviator, 20 years leading teams at Google, Meta, and startups, ICF-certified executive coach, and author of <em>SOAR into Joy</em>. Loree leads every partnership personally, from the first briefing to the final debrief.</p>
+      </div>
+      <div class="team-card">
+        <p class="role offset">Executive Coaches</p>
+        <h3>The Coaching Bench</h3>
+        <p>A hand-picked network of certified executive coaches Loree knows, trusts, and has vetted personally. When a partnership includes 1:1 coaching for multiple leaders, each executive is matched with the coach whose background fits their industry, role, and goals.</p>
+      </div>
+      <div class="team-card">
+        <p class="role offset">Delivery Partner</p>
+        <h3><a href="https://www.daysixleadership.com" style="text-decoration:none; color:inherit; border-bottom:2px solid var(--gold)">Day Six Leadership</a></h3>
+        <p>For large-scale leadership team development programs, we deliver in partnership with <a href="https://www.daysixleadership.com">Day Six Leadership</a>, adding experienced facilitators and program capacity so engagements can scale without losing the personal touch.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" style="padding-top:0">
+  <div class="wrap about-grid">
+    <img src="assets/loree-headshot.jpg" alt="Loree Draude, founder of LD Max Leadership">
+    <div>
+      <p class="eyebrow">About the Founder</p>
+      <h2>Loree "Rowdy" Draude</h2>
+      <p>Loree Draude was one of the first women in the U.S. Navy to fly in a combat squadron, deploying twice aboard the USS Abraham Lincoln with 300+ carrier landings and a place in the top 10 percent of her air wing as its first woman-qualified landing signal officer. She then spent 20 years leading teams in Silicon Valley, including at Google and Meta, where her leadership practices raised her organization's recognition scores 16 percent.</p>
+      <p>She holds an MBA from Wharton, is a Harvard Advanced Leadership Initiative fellow, an ICF-certified professional coach (PCC), and the author of two books, including the Amazon bestseller <em>SOAR into Joy</em>. Her one-woman show about her Navy years, <a href="https://ifeeltheneedshow.com"><em>I Feel the Need</em></a>, has played Hollywood Fringe and off-Broadway.</p>
+      <p class="human">Loree has also been laid off, forced to shut down her startup, divorced, fired, and quit her job. She keeps a written list of her failures and shares it with the leaders she coaches. She also overuses commas.</p>
+    </div>
+  </div>
+</section>
+
+<section class="name-story">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">What an Engagement Looks Like</p>
+      <h2>Three steps, no mystery.</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="n">Step 1</div>
+        <h3>Preflight briefing</h3>
+        <p>A conversation about your team, your goals, and where the drag is. No pitch, no deck. If it's not a fit, we'll tell you.</p>
+      </div>
+      <div class="step">
+        <div class="n">Step 2</div>
+        <h3>Flight plan</h3>
+        <p>A tailored engagement plan with clear outcomes, a cadence that fits your business, and a way to measure whether it's working.</p>
+      </div>
+      <div class="step">
+        <div class="n">Step 3</div>
+        <h3>Fly, then debrief</h3>
+        <p>Workshops, coaching, and honest debriefs, the way aviators do them. What went well, what didn't, and what we change next.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <p class="eyebrow">Get Started</p>
+    <h2>Ready to find your team's L/D max?</h2>
+    <p>Tell us about your organization and what you're navigating. Your note goes straight to Loree, who reads every one personally and will respond with an honest take on whether and how we can help.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-gold" href="mailto:loreedraude@gmail.com?subject=LD%20Max%20Leadership%20inquiry">Email Us</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/loreedraude">Connect on LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot">
+    <span>&copy; 2026 LD Max Leadership LLC &middot; Boston, Massachusetts</span>
+    <span>
+      <a href="https://loreedraude.com">loreedraude.com</a> &nbsp;&middot;&nbsp;
+      <a href="https://ifeeltheneedshow.com">I Feel the Need</a> &nbsp;&middot;&nbsp;
+      <a href="https://www.linkedin.com/in/loreedraude">LinkedIn</a>
+    </span>
+  </div>
+</footer>
+
+</body>
+</html>
