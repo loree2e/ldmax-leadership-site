@@ -24,7 +24,7 @@ Open the project in Claude Code and describe the change, or edit `index.html` di
 ## Before launch checklist
 
 - [ ] Buy ldmaxleadership.com (verified available as of Aug 4, 2026)
-- [ ] Swap the contact email in `index.html` from loreedraude@gmail.com to loree@ldmaxleadership.com once domain email is set up (search for "mailto:")
+- [x] Contact email is hello@ldmaxleadership.com (Hover Mailbox)
 - [ ] Confirm the LinkedIn URL in the site footer and contact section is correct
 - [ ] Review all copy, especially the About section and stats
 - [ ] Optional: add client testimonials when you have permission to use names
