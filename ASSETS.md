@@ -10,6 +10,8 @@ Source folder: `~/Desktop/LDMax Website Assets` (~85 files, ~364 MB — not comm
 | loree-headshot-alt.jpg | LoreeDraude-ALI Headshot.jpg (Downloads) | Team card |
 | loree-wef.jpg | 040825_Leadership_Selects_0326.jpeg | Keynotes (World Economic Forum stage shot) |
 | loree-hornet.jpg | Loree Hornet photo.jpeg | About the Founder (cockpit photo) |
+| loree-gdt.jpg | Loree GDT Audience.jpg | (currently unused; was in Keynotes before the reel) |
+| loree-reel.mp4 + loree-reel-poster.jpg | loree_draude_dfy_02 (1080p).mp4 | Keynotes (speaker reel, re-encoded 84→50 MB; poster = 25s frame) |
 
 ## Standout unused assets (for future site sections or marketing)
 

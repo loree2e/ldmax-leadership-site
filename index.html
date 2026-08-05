@@ -159,6 +159,9 @@
   .photo-figure { margin: 0 0 28px; }
   .photo-figure img { border-radius: 8px; width: 100%; }
   .photo-figure figcaption { font-size: 13px; color: var(--muted); margin-top: 10px; }
+  .reel { margin: 0 0 40px; }
+  .reel video { width: 100%; border-radius: 8px; display: block; background: #000; }
+  .reel figcaption { font-size: 13px; color: var(--muted); margin-top: 10px; }
   .talk-list { display: grid; gap: 20px; }
   .talk {
     display: grid; grid-template-columns: 140px 1fr; gap: 24px; align-items: baseline;
@@ -237,7 +240,7 @@
     <p class="lede">In aviation, L/D max is the speed where a wing produces the most lift for the least drag. Your leadership team has one too. LD Max Leadership partners with organizations to find it. We are a team of experienced executive coaches and facilitators, founded and led by Loree Draude, one of the U.S. Navy's first women to fly in a combat squadron and a 20-year veteran of leading teams at Google and Meta.</p>
     <div class="hero-ctas">
       <a class="btn btn-gold" href="#contact">Start a Conversation</a>
-      <a class="btn btn-ghost" href="#keynotes">Book a Keynote</a>
+      <a class="btn btn-ghost" href="#reel">Watch the Speaker Reel</a>
     </div>
   </div>
   <span class="hero-credit">Loree Draude at the World Economic Forum</span>
@@ -375,9 +378,12 @@
       <h2>Talks that start on a flight deck at midnight.</h2>
       <p>No moon. No stars. No horizon. Loree's keynotes open in the cockpit and land on frameworks your people will use Monday morning. She's a trained performer with an off-Broadway solo show, so your audience gets a storyteller, and your leaders get the takeaways.</p>
     </div>
-    <figure class="photo-figure">
-      <img src="assets/loree-gdt.jpg" alt="Loree Draude delivering an all-employee keynote at GDT, seen from the back of a full room">
-      <figcaption>Keynoting GDT's all-employee speaker event.</figcaption>
+    <figure class="reel" id="reel">
+      <video controls preload="none" playsinline poster="assets/loree-reel-poster.jpg">
+        <source src="assets/loree-reel.mp4" type="video/mp4">
+        Your browser doesn't support embedded video. <a href="assets/loree-reel.mp4">Download the reel</a>.
+      </video>
+      <figcaption>Watch Loree's speaker reel (3 min).</figcaption>
     </figure>
     <div class="talk-list">
       <div class="talk">
