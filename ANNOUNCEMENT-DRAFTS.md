@@ -10,7 +10,7 @@ I'm starting a new chapter, and I wanted you all to be among the first to know.
 
 For the past few years, I've had the honor of coaching executives one-on-one, and I kept noticing the same thing: a leader can grow enormously in our sessions, and then walk back into a team that's still carrying the same old drag. The leaders who soar highest are the ones whose whole team is climbing with them.
 
-So I'm shifting my focus. My new company is called LD Max Leadership, and it partners with organizations to develop their leadership teams, through team development programs, executive coaching, and keynotes.
+So I'm shifting my focus. My new company is called LD Max Leadership, and it partners with organizations to develop their leadership teams, through team development programs, executive coaching, and keynotes. The promise at the center of the work: helping leaders build courageous, human organizations that perform under pressure and through disruptive change.
 
 The name comes from aviation. L/D max is the speed where a wing produces the most lift for the least drag. It's the point where everything is working in your favor. Every pilot learns to find it, and I believe every leadership team can find theirs.
 
@@ -34,7 +34,7 @@ It's been a while since I've written, and I've missed you. The past year held a 
 
 I'm writing because I have news, and you're the people I most wanted to tell.
 
-I'm launching LD Max Leadership, a new company focused on partnering with organizations to develop their leadership teams. After years of coaching executives one-on-one, I kept seeing that the biggest transformations happen when a whole leadership team does the work together. So that's the work I'm building my business around: team development partnerships, executive coaching, and keynotes.
+I'm launching LD Max Leadership, a new company focused on partnering with organizations to develop their leadership teams. After years of coaching executives one-on-one, I kept seeing that the biggest transformations happen when a whole leadership team does the work together. So that's the work I'm building my business around: team development partnerships, executive coaching, and keynotes. All of it in service of one promise, helping leaders build courageous, human organizations that perform under pressure and through disruptive change.
 
 About the name. L/D max is an aviation term for the speed where a wing gets the most lift for the least drag. Every aircraft has that point. So does every team. Finding it is my favorite work in the world.
 
