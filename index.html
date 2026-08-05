@@ -133,6 +133,9 @@
 
   /* Keynotes */
   .keynotes { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .photo-figure { margin: 0 0 28px; }
+  .photo-figure img { border-radius: 8px; width: 100%; }
+  .photo-figure figcaption { font-size: 13px; color: var(--muted); margin-top: 10px; }
   .talk-list { display: grid; gap: 20px; }
   .talk {
     display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: baseline;
@@ -350,6 +353,10 @@
       <h2>Talks that start on a flight deck at midnight.</h2>
       <p>No moon. No stars. No horizon. Loree's keynotes open in the cockpit and land on frameworks your people will use Monday morning. She's a trained performer with an off-Broadway solo show, so your audience gets a storyteller, and your leaders get the takeaways.</p>
     </div>
+    <figure class="photo-figure">
+      <img src="assets/loree-wef.jpg" alt="Loree Draude speaking on stage at the World Economic Forum, with a photo from her Navy years on the screen behind her">
+      <figcaption>On stage at the World Economic Forum.</figcaption>
+    </figure>
     <div class="talk-list">
       <div class="talk">
         <span class="tag">Signature</span>
@@ -406,7 +413,13 @@
 
 <section id="about" style="padding-top:0">
   <div class="wrap about-grid">
-    <img src="assets/loree-headshot.jpg" alt="Loree Draude, founder of LD Max Leadership">
+    <div style="display:flex; flex-direction:column; gap:16px">
+      <img src="assets/loree-headshot.jpg" alt="Loree Draude, founder of LD Max Leadership" style="border-radius:8px">
+      <figure class="photo-figure" style="margin:0">
+        <img src="assets/loree-hornet.jpg" alt="A young Loree Draude in a jet cockpit on the flight line during her Navy years">
+        <figcaption>In the cockpit during her Navy years.</figcaption>
+      </figure>
+    </div>
     <div>
       <p class="eyebrow">About the Founder</p>
       <h2>Loree "Rowdy" Draude</h2>
