@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <title>LD Max Leadership | Leadership Team Development with Loree Draude</title>
 <meta name="description" content="LD Max Leadership helps leaders build courageous, human organizations that perform under pressure and through disruptive change. Leadership team development, executive coaching, and keynotes from a team founded by Navy combat aviator and Silicon Valley leader Loree Draude.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,6 +51,8 @@
   .nav { display: flex; align-items: center; justify-content: space-between; padding: 18px 24px; max-width: 1080px; margin: 0 auto; }
   .wordmark { font-family: 'Fraunces', serif; font-size: 19px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; }
   .wordmark strong { font-weight: 500; }
+  .wordmark.logo img { display: block; height: 42px; width: auto; }
+  @media (max-width: 420px) { .wordmark.logo img { height: 34px; } }
   .wordmark span { color: var(--gold-soft); font-style: italic; text-transform: none; letter-spacing: 0.02em; }
   .nav-links { display: flex; gap: 28px; align-items: center; }
   .nav-links a { text-decoration: none; font-size: 14.5px; font-weight: 500; opacity: 0.85; }
@@ -229,7 +234,7 @@
 
 <header>
   <nav class="nav">
-    <a class="wordmark" href="#top"><strong>LD&nbsp;Max</strong> <span>Leadership</span></a>
+    <a class="wordmark logo" href="#top"><img src="assets/ldmax-logo-header.svg" alt="LD Max Leadership" width="174" height="42"></a>
     <div class="nav-links">
       <a href="#why">Why LD Max</a>
       <a href="#programs">Programs</a>
