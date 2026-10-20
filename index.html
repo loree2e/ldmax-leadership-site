@@ -162,6 +162,15 @@
   .talk h3 { font-size: 22px; }
   .talk .tag { font-size: 13px; font-weight: 600; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; }
   .talk p { color: var(--muted); font-size: 15.5px; margin-top: 6px; }
+  .quotes { margin-top: 64px; }
+  .quotes .label { font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 24px; }
+  .quote-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+  @media (max-width: 900px) { .quote-grid { grid-template-columns: 1fr; gap: 32px; } }
+  .quote { border-top: 1px solid var(--navy); padding-top: 22px; display: flex; flex-direction: column; }
+  .quote blockquote { font-family: 'Fraunces', Georgia, serif; font-size: 18px; line-height: 1.5; color: var(--navy); margin: 0; }
+  .quote blockquote::before { content: "\201C"; display: block; font-size: 44px; line-height: 0.8; color: var(--gold); margin-bottom: 6px; }
+  .quote figcaption { margin-top: 18px; font-size: 14px; color: var(--muted); }
+  .quote figcaption strong { display: block; color: var(--ink); font-weight: 600; }
 
   /* Team */
   .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
@@ -364,6 +373,23 @@
           <h3>Storytelling for Leaders</h3>
           <p>The stories we tell our teams to inspire them, and the stories we tell ourselves about what we're capable of. Presented to audiences of 2,000+.</p>
         </div>
+      </div>
+    </div>
+    <div class="quotes">
+      <p class="label">What event hosts say</p>
+      <div class="quote-grid">
+        <figure class="quote">
+          <blockquote>Loree Draude delivered an exceptional keynote presentation at the Florida Cemetery, Cremation, and Funeral Association’s Annual Convention this year. Her presentation captivated attendees and inspired meaningful engagement, with many taking advantage of the post-presentation Q&amp;A session to continue the conversation.</blockquote>
+          <figcaption><strong>Dee Kring, CAE, CMP</strong>Executive Director, Florida Cemetery, Cremation and Funeral Association</figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>The way in which you seamlessly connected your military and professional work, the struggles and ability to overcome, to what our GM’s face on a daily basis was incredible. The team left feeling energized and more ready than ever to take responsibility as a leader of their individual units to drive performance!</blockquote>
+          <figcaption><strong>Lindsy Wnorowski</strong>Regional Senior Director, Operations &amp; Owner Services, Marriott International</figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>Loree was our keynote speaker at Lithium’s annual LiNC conference, with an audience of approximately one thousand attendees. If you’re looking for a speaker with humor, warmth, and compelling stories who can inspire an audience, hire Loree!</blockquote>
+          <figcaption><strong>Beverly Dunn</strong>Global Head of Customer Success, Ivalua</figcaption>
+        </figure>
       </div>
     </div>
   </div>
