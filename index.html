@@ -76,6 +76,9 @@
   .hero h1 { font-size: clamp(44px, 7vw, 76px); margin: 20px 0 26px; }
   .hero h1 em { font-style: italic; color: var(--gold-soft); }
   .hero p.lede { font-size: clamp(17px, 2.1vw, 20px); max-width: 560px; color: #dde4ec; }
+  .hero p.lede + p.lede { margin-top: 16px; }
+  .hero .eyebrow { max-width: 360px; line-height: 1.8; }
+  .hero .eyebrow span { white-space: nowrap; }
   .hero-ctas { margin-top: 40px; display: flex; gap: 16px; flex-wrap: wrap; }
   .hero-credit {
     position: absolute; bottom: 14px; right: 20px; z-index: 2;
@@ -239,9 +242,11 @@
 
 <div class="hero" id="top">
   <div class="hero-inner">
-    <p class="eyebrow">Leadership Team Development &middot; Executive Coaching &middot; Keynotes</p>
+    <p class="eyebrow"><span>Leadership Team Development &middot;</span> <span>Keynotes &middot;</span> <span>Executive Coaching</span></p>
     <h1>Less drag.<br><em>More lift.</em></h1>
-    <p class="lede">In aviation, L/D max is the speed where a wing produces the most <strong>lift</strong> for the least <strong>drag</strong>. Your leadership team has one too. LD Max Leadership partners with organizations to find it. Our founder, Loree Draude, translates naval aviation and business leadership lessons into practical ways to lead teams through pressure and uncertainty. She was one of the U.S. Navy's first women to fly in a combat squadron and spent 20 years leading teams in Silicon Valley, including at Google and Meta. She leads a team of experienced executive coaches and facilitators.</p>
+    <p class="lede">In aviation, L/D max is the speed where a wing produces the most <strong>lift</strong> for the least <strong>drag</strong>. Your leadership team has one too. LD Max Leadership partners with organizations to find it.</p>
+    <p class="lede">We translate naval aviation and business leadership lessons into practical ways to lead teams through pressure and uncertainty.</p>
+    <p class="lede">Our founder, Loree Draude, was one of the U.S. Navy's first women to fly in a combat squadron and spent 20 years leading teams in Silicon Valley, including at Google and Meta. She leads a team of experienced executive coaches and facilitators.</p>
     <div class="hero-ctas">
       <a class="btn btn-gold" href="#contact">Start a Conversation</a>
       <a class="btn btn-ghost" href="#reel">Watch the Speaker Reel</a>
@@ -325,7 +330,7 @@
     <div class="client-quotes">
       <figure class="client-quote">
         <blockquote>“Loree not only guided us – as a team – through a difficult period but truly helped me personally. It was hard but Loree made it surprisingly pleasant. And it was a success. I would work with her again in a heartbeat.”</blockquote>
-        <figcaption><strong>Steve Cohen</strong>, Pollock | Cohen</figcaption>
+        <figcaption><strong>Steve Cohen</strong>, Partner, Pollock | Cohen</figcaption>
       </figure>
     </div>
   </div>
