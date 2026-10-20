@@ -163,6 +163,11 @@
   .talk .tag { font-size: 13px; font-weight: 600; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; }
   .talk p { color: var(--muted); font-size: 15.5px; margin-top: 6px; }
   .quotes { margin-top: 64px; }
+  .client-quotes { margin-top: 72px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 48px; }
+  .client-quote { border-left: 3px solid var(--gold); padding: 4px 0 4px 28px; margin: 0; max-width: 860px; }
+  .client-quote blockquote { font-family: 'Fraunces', Georgia, serif; font-size: clamp(20px, 2.4vw, 26px); line-height: 1.45; color: var(--navy); margin: 0; }
+  .client-quote figcaption { margin-top: 16px; font-size: 14.5px; color: var(--muted); }
+  .client-quote figcaption strong { color: var(--ink); font-weight: 600; }
   .quotes .label { font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 24px; }
   .quote-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
   @media (max-width: 900px) { .quote-grid { grid-template-columns: 1fr; gap: 32px; } }
@@ -316,6 +321,12 @@
           <li>Every talk tailored to your industry and moment</li>
         </ul>
       </div>
+    </div>
+    <div class="client-quotes">
+      <figure class="client-quote">
+        <blockquote>“Loree not only guided us – as a team – through a difficult period but truly helped me personally. It was hard but Loree made it surprisingly pleasant. And it was a success. I would work with her again in a heartbeat.”</blockquote>
+        <figcaption><strong>Steve Cohen</strong>, Pollock | Cohen</figcaption>
+      </figure>
     </div>
   </div>
 </section>
