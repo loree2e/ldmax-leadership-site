@@ -171,6 +171,13 @@
   .talk .tag { font-size: 13px; font-weight: 600; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; }
   .talk p { color: var(--muted); font-size: 15.5px; margin-top: 6px; }
   .quotes { margin-top: 64px; }
+  .services { margin-top: 72px; padding-top: 56px; border-top: 1px solid rgba(41,39,102,0.15); }
+  .services h3.services-title { font-size: clamp(24px, 3vw, 30px); margin: 14px 0 32px; }
+  .services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px 48px; }
+  @media (max-width: 820px) { .services-grid { grid-template-columns: 1fr; gap: 28px; } }
+  .service { border-left: 3px solid var(--gold); padding: 2px 0 2px 22px; }
+  .service h4 { font-size: 19px; color: var(--navy); margin: 0 0 8px; }
+  .service p { font-size: 15.5px; color: var(--muted); margin: 0; }
   .client-quotes { margin-top: 72px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 48px; }
   .client-quote { border-left: 3px solid var(--gold); padding: 4px 0 4px 28px; margin: 0; max-width: 860px; }
   .client-quote blockquote { font-family: 'Fraunces', Georgia, serif; font-size: clamp(19px, 1.9vw, 22px); line-height: 1.5; color: var(--navy); margin: 0; }
@@ -330,6 +337,28 @@
           <li>Half-day and full-day team workshops</li>
           <li>Every talk tailored to your industry and moment</li>
         </ul>
+      </div>
+    </div>
+    <div class="services" id="services">
+      <p class="eyebrow">Service Offerings</p>
+      <h3 class="services-title">When the stakes are high, we work alongside your management team.</h3>
+      <div class="services-grid">
+        <div class="service">
+          <h4>Interim and Fractional Executive Leadership</h4>
+          <p>Providing temporary CEO, COO, general management, or executive advisory support during leadership transitions or periods of organizational strain.</p>
+        </div>
+        <div class="service">
+          <h4>Operating Performance Improvement</h4>
+          <p>Working directly with management teams to address organizational effectiveness and execution challenges.</p>
+        </div>
+        <div class="service">
+          <h4>Rapid Operating Assessments</h4>
+          <p>Conducting focused evaluations of portfolio company performance and management capabilities, with actionable recommendations and prioritized improvement plans.</p>
+        </div>
+        <div class="service">
+          <h4>Management Team Advisory</h4>
+          <p>Supporting CEOs and founders as they navigate growth, organizational complexity, and the demands of institutional investors.</p>
+        </div>
       </div>
     </div>
     <div class="client-quotes">
