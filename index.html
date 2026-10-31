@@ -178,6 +178,13 @@
   .service { border-left: 3px solid var(--gold); padding: 2px 0 2px 22px; }
   .service h4 { font-size: 19px; color: var(--navy); margin: 0 0 8px; }
   .service p { font-size: 15.5px; color: var(--muted); margin: 0; }
+  .changes { margin-top: 56px; background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 40px; }
+  @media (max-width: 600px) { .changes { padding: 28px 22px; } }
+  .changes .services-title { margin-bottom: 24px; }
+  .changes-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px 40px; }
+  @media (max-width: 760px) { .changes-list { grid-template-columns: 1fr; } }
+  .changes-list li { position: relative; padding-left: 26px; font-size: 15.5px; color: var(--ink); }
+  .changes-list li::before { content: ""; position: absolute; left: 0; top: 0.55em; width: 10px; height: 10px; border-radius: 50%; background: var(--gold); }
   .client-quotes { margin-top: 72px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 48px; }
   .client-quote { border-left: 3px solid var(--gold); padding: 4px 0 4px 28px; margin: 0; max-width: 860px; }
   .client-quote blockquote { font-family: 'Fraunces', Georgia, serif; font-size: clamp(19px, 1.9vw, 22px); line-height: 1.5; color: var(--navy); margin: 0; }
@@ -360,6 +367,20 @@
           <p>Supporting CEOs and founders as they navigate growth, organizational complexity, and the demands of institutional investors.</p>
         </div>
       </div>
+    </div>
+    <div class="changes">
+      <p class="eyebrow">What changes when we work together</p>
+      <h3 class="services-title">Working with me, your leaders will:</h3>
+      <ul class="changes-list">
+        <li>Surface what is slowing the team down, through confidential interviews with each leader.</li>
+        <li>Turn executive decisions into priorities people can repeat two levels down.</li>
+        <li>Make company-wide trade-offs as one team instead of defending their own functions.</li>
+        <li>Give AI decisions a clear owner, objective, and abort criteria.</li>
+        <li>Know how much more change their teams can absorb before the best people burn out or leave.</li>
+        <li>Give candid feedback with clear standards and practical support, so trust grows with performance.</li>
+        <li>Build a debrief habit that turns setbacks into shared learning and measurable progress.</li>
+        <li>Practice new behaviors on the job with 1:1 executive coaching.</li>
+      </ul>
     </div>
     <div class="client-quotes">
       <figure class="client-quote">
